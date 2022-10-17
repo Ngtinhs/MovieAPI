@@ -8,6 +8,7 @@ const port = 3000;
 
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
+const movieRoute = require("./routes/movies");
 
 dotenv.config();
 
@@ -40,6 +41,7 @@ mongoose
 
   app.use("/api/auth", authRoute);
   app.use("/api/users", userRoute);
+  app.use("/api/movies", movieRoute);
 
 
   app.listen(port, () =>
