@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const router = require("express").Router();
 
 const dotenv = require("dotenv");
-const port = 3000;
+const port = 3002;
 
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
